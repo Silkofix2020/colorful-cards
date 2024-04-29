@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.5.2/css/all.css");
+
+:root {
+    --color1: #eb904b;
+    --color2: #813085;
+    --color3: #119630;
+    --color4: #116c96;
+    --color5: #899611;
+    --color6: #251196;
+    --color7: #965111;
+    --color8: #119696;
+    --color9: #961148;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 9px;
+}
+
+h3,
+h4 {
+    margin: 0;
+}
+.title {
+    width: 95%;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
+    font-size: 70px;
+}
+.container {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Varela Round", sans-serif;
+    line-height: 1.5em;
+    padding: 30px 0;
+}
+.item {
+    --color: #eb904b;
+    width: 185px;
+    background-color: var(--color);
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-shadow: #3c40434d 0px 1px 2px 0px, #3c404426 0px 1px 3px 1px;
+    position: relative;
+    cursor: pointer;
+}
+.item::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 2;
+    height: 80%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--color);
+    border-width: 40px 40px 40px 40px;
+    filter: drop-shadow(5px 0 4px #00000094);
+    transition: filter 0.5s;
+}
+.item:nth-child(2) {
+    --color: #813085;
+}
+.item:nth-child(3) {
+    --color: #119630;
+}
+.item:nth-child(4) {
+    --color: #116c96;
+}
+.item:nth-child(5) {
+    --color: #899611;
+}
+.item:nth-child(6) {
+    --color: #251196;
+}
+.item:nth-child(7) {
+    --color: #965111;
+}
+.item:nth-child(8) {
+    --color: #119696;
+}
+.item:nth-child(9) {
+    --color: #961148;
+}
+.title__item {
+    color: var(--color1);
+}
+.title__item:nth-child(2) {
+    color: var(--color2);
+}
+.title__item:nth-child(3) {
+    color: var(--color3);
+}
+.title__item:nth-child(4) {
+    color: var(--color4);
+}
+.title__item:nth-child(5) {
+    color: var(--color5);
+}
+.title__item:nth-child(6) {
+    color: var(--color6);
+}
+.title__item:nth-child(7) {
+    color: var(--color7);
+}
+.title__item:nth-child(8) {
+    color: var(--color8);
+}
+.title__item:nth-child(9) {
+    color: var(--color9);
+}
+.title__item:nth-child(10) {
+    color: var(--color1);
+}
+.title__item:nth-child(11) {
+    color: var(--color2);
+}
+.title__item:nth-child(12) {
+    color: var(--color3);
+}
+.title__item:nth-child(13) {
+    color: var(--color4);
+}
+.layer {
+    background-color: #f2f2f2;
+    border: 1px solid #fff;
+    border-radius: inherit;
+    padding: 20px;
+    box-shadow: #00000012 0px 1px 2px, #00000012 0px 2px 4px,
+        #00000012 0px 4px 8px, #00000012 0px 8px 16px, #00000012 0px 16px 32px,
+        #00000012 0px 32px 64px;
+    position: relative;
+    left: 10px;
+    transition: left 1s;
+}
+h3 {
+    font-weight: 700;
+    text-align: center;
+    color: var(--color);
+}
+h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+p {
+    color: #555;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: var(--color);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    box-shadow: #00000012 0px 1px 2px, #00000012 0px 2px 4px,
+        #00000012 0px 4px 8px, #00000012 0px 8px 16px, #00000012 0px 16px 32px,
+        #00000012 0px 32px 64px;
+    font-size: 14px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.item:hover::after {
+    filter: drop-shadow(5px 0 4px #0000001a);
+}
+.item:hover .layer {
+    left: 50px;
+}
